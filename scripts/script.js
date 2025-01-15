@@ -7,4 +7,10 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const address = document.getElementById('floating_adress').value;
 
     alert(`Form submitted! \nName: ${firstName} ${lastName} \nCity: ${city} \nAddress: ${address}`);
-});
+})
+const formData = new FormData(this);
+console.log('Emri:', first_name);
+console.log('Mbiemri:', last_name);
+console.log('Qyteti:', city);
+console.log('Adresa:', address);
+alert("Form data collected!");
